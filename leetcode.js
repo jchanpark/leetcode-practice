@@ -19,3 +19,14 @@ const twoSum = function(nums, target) {
 };
 
 
+/* Given an integer x, return true if x is palindrome integer. An integer is palindrome when it reads the same backward as forward. For example, 121 is a palindrome while 123 is not */
+
+/* Eample 1
+Input: x = -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome */
+
+const isPalindrome = function(x) {
+  const reversedNum = parseInt(x.toString().split('').reverse().join(''));
+  return x === reversedNum;
+};
